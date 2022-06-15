@@ -13,10 +13,16 @@
             margin-bottom: 1px;
         }
         .photos {
-            margin-top: 50px;
+            margin-top: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        #startup {
+           width:300px;
+           height:200px;
+           object-fit:cover;
+           border-radius:30%;
         }
         .gray {
             color: #a0a0a0;
@@ -40,8 +46,9 @@
 </head>
 <body class="container">
     <section class='photos'>
-        <img src="START-UP.jpg" height="300" alt="startup" title="startup">
+     <img id='startup' src="startup.jpg" alt="startup">
     </section>
+
     <div class='container d-flex flex-column justify-content-center align-items-center mt-3'>
         <h3>START-UP SCHOOL 3기</h3>
         <h3 id='START-UP'>0일째</h3>
