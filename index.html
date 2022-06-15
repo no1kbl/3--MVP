@@ -51,7 +51,7 @@
 
     <div class='container d-flex flex-column justify-content-center align-items-center mt-3'>
         <h3>START-UP SCHOOL 3기</h3>
-        <h3 id='START-UP'>0일째</h3>
+        <h3 id='daycount'>0일째</h3>
         <h4 class="date">2022.6.13</h4>
     </div>
     <hr/>
@@ -79,21 +79,19 @@
         var now = new Date();
         var start = new Date('2022-06-13');
 
-        var timeDiff = now.getTime() - start.getTime();
-        var day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
-        $('#START-UP').text(day + '일째');
+        var timediff1 = now.getTime() - start.getTime();
+        var day = Math.floor(timediff1 / (1000 * 60 * 60 * 24) + 1);
+        $('#daycount').text(day + '일째');
 
-        //기념일까지 남은 날짜는?
         var ideathon = new Date('2022-07-29');
         var timeDiff2 = ideathon.getTime() - now.getTime();
         var day2 = Math.floor(timeDiff2 / (1000 * 60 * 60 * 24) + 1);
         $('#ideathon').text(day2 + '일 남음');
 
-        //기념일까지 남은 날짜는?
         var demod = new Date('2022-09-05');
-        var timeDiff2 = demod.getTime() - now.getTime();
-        var day2 = Math.floor(timeDiff2 / (1000 * 60 * 60 * 24) + 1);
-        $('#demod').text(day2 + '일 남음');
+        var timeDiff3 = demod.getTime() - now.getTime();
+        var day3 = Math.floor(timeDiff3 / (1000 * 60 * 60 * 24) + 1);
+        $('#demod').text(day3 + '일 남음');
     </script>
 </body>
 </html>
