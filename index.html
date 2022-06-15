@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>기념일 계산기</title>
+    <title>CODELION START-UP SCHOOL3</title>
     <style>
         * {
             color: #333333;
@@ -17,24 +17,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        #duhee {
-            width:150px;
-            height:150px;
-            object-fit:cover;
-            border-radius:50%;
-            margin-right: 30px;
-        }
-        #jisook {
-            width:150px;
-            height:150px;
-            object-fit:cover;
-            border-radius:50%;
-            margin-left: 30px;
-        }
-        #heart {
-            width:50px;
-            height:50px;
         }
         .gray {
             color: #a0a0a0;
@@ -58,30 +40,28 @@
 </head>
 <body class="container">
     <section class='photos'>
-        <img id='duhee' src="duhee.jpeg" alt="duhee">
-        <img id='heart' src="heart.png" alt="heart">
-        <img id='jisook' src="jisook.jpeg" alt="jisook">
+        <img src="START-UP.jpg" height="300" alt="startup" title="startup">
     </section>
     <div class='container d-flex flex-column justify-content-center align-items-center mt-3'>
-        <h3>두희♥지숙</h3>
-        <h3 id='love'>0일째</h3>
-        <h4 class="date">2020.6.30</h4>
+        <h3>START-UP SCHOOL 3기</h3>
+        <h3 id='START-UP'>0일째</h3>
+        <h4 class="date">2022.6.13</h4>
     </div>
     <hr/>
     <section class='special-day'>
-        <h3 class='title'>발렌타인 데이</h3>
+        <h3 class='title'>IDEATHON</h3>
         <div class='date-box'>
-            <p id='valentine' class='days-left'>0일 남음</p>
-            <p class='date'>2021.2.14</p>
+            <p id='ideathon' class='days-left'>0일 남음</p>
+            <p class='date'>2022.7.29</p>
         </div>
     </section>
     <hr/>
     <section class='special-day'>
-        <h3 class='title'>1000일</h3>
-        <div class='date-box'>
-            <p id='thousand' class='days-left'>0일 남음</p>
-            <p id='thousand-date' class='date'>0000.00.00</p>
-        </div>
+      <h3 class='title'>DEMO Day</h3>
+      <div class='date-box'>
+          <p id='demod' class='days-left'>0일 남음</p>
+          <p class='date'>2022.9.5</p>
+      </div>
     </section>
     <hr/>
     <script
@@ -90,28 +70,23 @@
   crossorigin="anonymous"></script>
     <script>
         var now = new Date();
-        var start = new Date('2020-06-30');
+        var start = new Date('2022-06-13');
 
-        //우리 몇 일째? 1일부터 시작이라 +1, 위에 몇일째는 id love
         var timeDiff = now.getTime() - start.getTime();
         var day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
-        $('#love').text(day + '일째');
+        $('#START-UP').text(day + '일째');
 
         //기념일까지 남은 날짜는?
-        var valentine = new Date('2021-02-14');
-        var timeDiff2 = valentine.getTime() - now.getTime();
+        var ideathon = new Date('2022-07-29');
+        var timeDiff2 = ideathon.getTime() - now.getTime();
         var day2 = Math.floor(timeDiff2 / (1000 * 60 * 60 * 24) + 1);
-        $('#valentine').text(day2 + '일 남음');
-
-        //천일은 언제인가?
-        var thousand = new Date(start.getTime() + 999 * (1000 * 60 * 60 * 24));
-        var thousandDate = thousand.getFullYear() + '.' + (thousand.getMonth()+1) + '.' + thousand.getDate();
-        $('#thousand-date').text(thousandDate);
+        $('#ideathon').text(day2 + '일 남음');
 
         //기념일까지 남은 날짜는?
-        var timeDiff3 = thousand.getTime() - now.getTime();
-        var day3 = Math.floor(timeDiff3 / (1000 * 60 * 60 * 24) + 1);
-        $('#thousand').text(day3 + '일 남음');
+        var demod = new Date('2022-09-05');
+        var timeDiff2 = demod.getTime() - now.getTime();
+        var day2 = Math.floor(timeDiff2 / (1000 * 60 * 60 * 24) + 1);
+        $('#demod').text(day2 + '일 남음');
     </script>
 </body>
 </html>
