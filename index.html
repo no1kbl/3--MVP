@@ -1,78 +1,40 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>SUS3 FriYay!</title>
-    <style>
-        * {
-            color: #333333;
-        }
-        p {
-            margin-bottom: 1px;
-        }
-        .photos {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #friyay1 {
-           width:700px;
-           height:250px;
-           object-fit:cover;
-           border-radius:20%;
-        }
-        .gray {
-            color: #a0a0a0;
-        }
-        .title {
-            display: flex;
-            align-items: center;
-        }
-        .date {
-            text-align: center;
-            color: #0a0ef2;
-        }
-    </style>
-</head>
-<head>
-        <title>Running a Python script</title>
-        <?PHP
-        echo shell_exec("friday.py \"Parameter #1\" \"Parameter #2\"");
-       ?>
-</head>
-<body class="container">
-    <section class='photos'>
-     <img id='friyay1' src="friyay1.jpg" alt="friyay1">
-    </section>
-    <div class='container d-flex flex-column justify-content-center align-items-center mt-3'>
-        <h3>SUS 3기 FriYay!!</h3>
-        <h4 class="date">2022.6.24</h4>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Generator</title>
+    <link rel="stylesheet" href="friyayteam.css" />
+  </head>
+  <body>
+    <div class="allPage">
+      <div class="container">
+        <h2 class="title">Random Team Generator</h2>
+        <textarea
+          name=""
+          id="myInput"
+          cols="30"
+          rows="10"
+          placeholder="이름 입력 후 , 와 빈칸 입력 해주세요 (, )"
+        ></textarea
+        ><br />
+        <input type="number" placeholder="Group Amount" id="numberTeam" />
+        <br />
+        <button
+          type="button"
+          id="buttons"
+          onclick="getInputValue()"
+          value="Submit"
+        >
+          Shuffle
+        </button>
+      </div>
+      <div class="hidden teams">
+        <h2 class="hidden">Group List</h2>
+        <div id="output" class="output"></div>
+        <button id="reset" class="hidden">Restart</button>
+      </div>
     </div>
-    <hr/>
-    <h4> 참석 예정자 명단 </h4>
-
-      황다정, 주재성, 유승희, 송치헌, 김혜진, 최학수,
-      이종석, 이준석, 심재운, 문한결, 조정훈, 김건우,
-      심현아, 임현정, 김다송, 배우혁, 김정수, 김이석,
-      김명준, 김고은, 강보림
-
-   <hr/>
-   <h4> Information </h4>
-   <ol>
-   <li>진행</li>
-   Host : 황다정<br>
-   Helper : 장한솔, 강보림, 주재성<br><br>
-
-   <li>장소-협의 중</li>
-   <a target="_blank" href=https://m.place.naver.com/restaurant/37233372/home?subtab=location>삼성역 5번출구 월스트리트<br>
-   <a target="_blank" href=https://m.place.naver.com/restaurant/1392610501/home>삼성역 6번출구 데블스도어<br>
-   <a target="_blank" href=https://m.place.naver.com/restaurant/1499129002/home>삼성중앙역 5번출구 오스카<br>
-   </ol>
-  <hr/>
-
-
-</body>
+    <script src="friyayteam.js"></script>
+  </body>
 </html>
