@@ -1,0 +1,90 @@
+* {
+    background-color: grey;
+    text-decoration: none;
+}
+#refer_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#question-top {
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 50vw;
+    height: 10vh;
+}
+
+#question-list {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    padding: 5px;
+    width: 50vw;
+    height: 12vh;
+  }
+
+.question {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  text-align: centers;
+  width: 150px;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: orange;
+  font-size: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+  rgba(0, 0, 0, 0.12) 0px -12px 30px,
+  rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  rgba(0, 0, 0, 0.17) 0px 12px 13px,
+  rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#q_card {
+display: flex;
+width: 50vw;
+height: 20%;
+color: white;
+text-align: center;
+align-items: center;
+border: 1px solid orange;
+justify-content:center;
+flex-direction: column;
+align-items:center;
+border-radius: 3%;
+box-sizing: border-box;
+}
+
+.q_cardhead {
+color: orange;
+font-size: 25spx;
+padding-bottom: 5px;
+padding-top: 5px;
+}
+
+.q_cardchild {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 5px;
+
+}
+
+
+a:link {
+  color : white;
+    text-decoration: none;
+  }
+  a:visited {
+    color : black;
+    text-decoration: none;
+  }
+  a:hover {
+    color : red;
+    text-decoration: underline;
+  }
+  a:active {
+    color : green;
+    text-decoration: none;
+  }
