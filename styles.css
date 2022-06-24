@@ -23,9 +23,8 @@
   }
 
 .question {
-
   text-align: center;
-  width: 70%;
+  width: 100px;
   height: 50px;
   box-sizing: border-box;
   background-color: orange;
