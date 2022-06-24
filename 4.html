@@ -3,26 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&family=Montserrat:ital,wght@0,100;0,600;0,800;1,500&display=swap" rel="stylesheet">
+ 
+    <style>
+.left, .right {
+  float:left;
+  width:20%; /
+}
+
+.main {
+  float:left;
+  width:60%; /
+}
+
+@media (max-width:800px) {
+  .left, .main, .right {
+    width:100%; /
+  }
+}
+</style>
+    
     <link rel="stylesheet" href="styles.css">
     <title>SUS3 Friyay Question Time</title>
+    
 </head>
 <body>
   <div id="refer_1">
   <div id="question-top">
-    <h1><a href="index.html">SUS3 Friyay Question Time</a></h1>
-   </div>
+    <h2><a href="index.html">SUS3 Friyay Question Time</a></h2>
+  </div>
  
      <div id="question-list">
-      <a href="1.html" class="question">No.1</a>
-      <a href="2.html" class="question">No.2</a>
-      <a href="3.html" class="question">No.3</a>
-      <a href="4.html" class="question">No.4</a>
-      <a href="5.html" class="question">No.5</a>
+         <h2><a href="1.html" class="question">No.1</a></h2>
+      <h2><a href="2.html" class="question">No.2</a></h2>
+      <h2><a href="3.html" class="question">No.3</a></h2>
+      <h2><a href="4.html" class="question">No.4</a></h2>
+      <h2><a href="5.html" class="question">No.5</a></h2>
      </div>
+    
 
      <div id="q_card">
       <h2 class="q_cardhead">Question No.4</h2>
