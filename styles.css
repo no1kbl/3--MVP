@@ -25,10 +25,10 @@
 .question {
   text-align: center;
   width: 70%;
-  height: 50px;
+  height: 30%;
   box-sizing: border-box;
   background-color: orange;
-  font-size:30px;
+  font-size:60%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
   rgba(0, 0, 0, 0.12) 0px -12px 30px,
   rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -53,7 +53,6 @@ box-sizing: border-box;
 
 .q_cardhead {
 color: orange;
-font-size: 25spx;
 padding-bottom: 5px;
 padding-top: 5px;
 }
